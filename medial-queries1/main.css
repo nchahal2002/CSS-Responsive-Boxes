@@ -1,3 +1,72 @@
-body {
-  background: blanchedalmond;
+
+:root {
+  --marginv: 8px;
+  --marginh: 4px;
+  --fontsize: 15;
 }
+
+
+div.container {
+  border: 1px solid;
+  width: 100%;
+  height: 48em;
+  background-color: lightgray;
+  margin: auto;
+}
+
+.a {
+  font-size: var(--fontsize);
+  border: 3px 3px solid;
+  background-color: grey;
+  height: 25%;
+  margin: var(--marginv);
+  text-align: center;
+}
+
+.b {
+  border: 3px 3px solid;
+  background-color: grey;
+  height: 45%;
+  margin: var(--marginv);
+  text-align: center;
+}
+
+.c {
+  border: 3px 3px solid;
+  background-color: grey;
+  margin: var(--marginv);
+  text-align: center;
+  height: 22%;
+}
+
+@media(min-width: 600px) {
+  .a {
+    display: block;
+    width: 97.5%;
+    border: 3px 3px solid;
+    background-color: grey;
+    height: 20%;
+    margin: var(--marginh);
+    text-align: center;
+  }
+  
+  .b {
+    display: inline-block;
+    border: 3px 3px solid;
+    background-color: grey;
+    width: 63%;
+    height: 20%;
+    margin: var(--marginh);
+    text-align: center;
+  }
+  
+  .c {
+    display: inline-block;
+    border: 3px 3px solid;
+    background-color: grey;
+    margin: var(--marginh);
+    text-align: center;
+    width: 33%;
+    height: 20%;
+  }
+} 
